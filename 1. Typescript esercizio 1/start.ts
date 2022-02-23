@@ -38,9 +38,9 @@ const obj: Person = {
 }
 
 export interface Address {
-    city: string,
-    street: string,
-    postalCode: string
+    city: string;
+    street: string;
+    postalCode: string;
 }
 
 export interface Company {
