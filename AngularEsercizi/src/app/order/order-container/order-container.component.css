@@ -1,0 +1,9 @@
+app-order-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 20px;
+  padding-bottom: 10px;
+  background-color: rgb(221, 199, 231);
+  border: 1px solid rgb(184, 70, 219);
+}

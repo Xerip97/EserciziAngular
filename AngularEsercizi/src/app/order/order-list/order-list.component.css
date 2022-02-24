@@ -1,0 +1,8 @@
+app-order-single {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  margin: 10px;
+  background-color: rgb(186, 190, 224);
+  border: 1px solid rgb(70, 85, 219);
+}
