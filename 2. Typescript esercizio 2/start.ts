@@ -51,27 +51,3 @@ class User implements Person {
     this.gender = gender;
   }
 }
-let user = new User(
-  1,
-  "Fabio",
-  "Viola",
-  24,
-  "16/10/1997",
-  { city: "Cianciana", street: "Via Carubia 30", postalCode: "92012" },
-  "student",
-  "Xerip",
-  "url",
-  [
-    {
-      id: 148979,
-      name: "Develhope",
-      description: "La migliore",
-      location: {
-        city: "Palermo",
-        street: "Via Libertà 58",
-        postalCode: "90139",
-      },
-    },
-  ],
-  "male"
-);
