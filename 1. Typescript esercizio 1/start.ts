@@ -1,9 +1,9 @@
-const obj: Person = {
+export const obj: Person = {
   id: 3487,
   name: "Mario",
   surname: "Rossi",
   age: 25,
-  dateOfBirth: "1995-14-12",
+  dateOfBirth: new Date(1995, 12, 14),
   address: {
     city: "Roma",
     street: "Via roma 10",
@@ -59,7 +59,7 @@ export interface Person {
   name: string;
   surname: string;
   age: number;
-  dateOfBirth: string;
+  dateOfBirth: Date;
   address: Address;
   role: role;
   username: string;

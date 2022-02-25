@@ -1,0 +1,23 @@
+<div class="user-details-container">
+  <p>id: {{ mario.id }}</p>
+  <p>Name: {{ mario.name }}</p>
+  <p>Surname: {{ mario.surname }}</p>
+  <p>Age: {{ mario.age }}</p>
+  <p>Date of birth: {{ mario.dateOfBirth | date: "dd MMM yyyy" }}</p>
+  <b>Address:</b>
+  <p>City: {{ mario.address.city }}</p>
+  <p>Street: {{ mario.address.street }}</p>
+  <p>Postal Code: {{ mario.address.postalCode }}</p>
+  <p>Role: {{ mario.role }}</p>
+  <p>Username: {{ mario.username }}</p>
+  <img
+    class="user-profilePhoto"
+    [src]="mario.profilePhotoUrl"
+    alt="profilePhotoUrl:"
+  />
+  <p>Gender: {{ mario.gender }}</p>
+  <div *ngFor="let company of mario.companies">
+    <b>Company: {{ company.name }}</b>
+    <p>Description: {{ company.description }}</p>
+  </div>
+</div>

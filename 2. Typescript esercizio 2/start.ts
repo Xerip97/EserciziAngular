@@ -6,12 +6,12 @@ import {
   gender,
 } from "../1. Typescript esercizio 1/start";
 
-class User implements Person {
+export class User implements Person {
   id: number;
   name: string;
   surname: string;
   age: number;
-  dateOfBirth: string;
+  dateOfBirth: Date;
   address: Address;
   role: role;
   username: string;
@@ -27,7 +27,7 @@ class User implements Person {
     name: string,
     surname: string,
     age: number,
-    dateOfBirth: string,
+    dateOfBirth: Date,
     address: Address,
     role: role,
     username: string,
