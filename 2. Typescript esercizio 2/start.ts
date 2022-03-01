@@ -45,9 +45,6 @@ export class User implements Person {
     this.username = username;
     this.profilePhotoUrl = profilePhotoUrl;
     this.companies = [...companies];
-    companies.forEach((company) => {
-      company.location = { ...company.location };
-    });
     this.gender = gender;
   }
 }
