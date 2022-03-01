@@ -6,3 +6,8 @@
   gap: 15px;
   max-width: 400px;
 }
+
+.profile-photo {
+  max-height: 70px;
+  max-width: 70px;
+}
