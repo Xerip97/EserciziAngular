@@ -3,5 +3,6 @@
   ngClass="user-list-container"
   [user]="user"
   [userIndex]="userList.indexOf(user) + 1"
+  (clickDeleteUser)="deleteUser($event)"
 >
 </app-user-single>
