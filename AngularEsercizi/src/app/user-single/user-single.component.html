@@ -1,0 +1,12 @@
+<div ngClass="user-detail-container">
+  <span>{{ userIndex }}.</span>
+  <span
+    ><img
+      class="profile-photo"
+      [src]="user.profilePhotoUrl"
+      alt="profile photo"
+  /></span>
+  <b>{{ user.name + user.surname }}</b>
+  <span>{{ user.age }}</span>
+  <span>{{ user.address.city }}</span>
+</div>

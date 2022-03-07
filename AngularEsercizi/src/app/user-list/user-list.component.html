@@ -1,12 +1,7 @@
-<div ngClass="user-list-container" *ngFor="let user of userList">
-  <span>{{ userList.indexOf(user) + 1 }}.</span>
-  <span
-    ><img
-      class="profile-photo"
-      [src]="user.profilePhotoUrl"
-      alt="profile photo"
-  /></span>
-  <b>{{ user.name + user.surname }}</b>
-  <span>{{ user.age }}</span>
-  <span>{{ user.address.city }}</span>
-</div>
+<app-user-single
+  *ngFor="let user of userList"
+  ngClass="user-list-container"
+  [user]="user"
+  [userIndex]="userList.indexOf(user) + 1"
+>
+</app-user-single>
