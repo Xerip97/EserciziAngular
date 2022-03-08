@@ -1,4 +1,12 @@
-<div ngClass="user-detail-container">
+<div
+  class="user-detail-container"
+  [ngClass]="{
+    'staff-user': user.role === 0,
+    'student-user': user.role === 1,
+    'manager-user': user.role === 2,
+    'admin-user': user.role === 3
+  }"
+>
   <span>{{ userIndex }}.</span>
   <span
     ><img

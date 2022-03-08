@@ -5,9 +5,26 @@
   align-items: center;
   gap: 15px;
   max-width: 400px;
+  margin: 3px;
 }
 
 .profile-photo {
   max-height: 70px;
   max-width: 70px;
+}
+
+.staff-user {
+  border: 2px solid rgb(26, 78, 26);
+}
+
+.student-user {
+  border: 2px solid rgb(122, 68, 115);
+}
+
+.manager-user {
+  border: 2px solid rgb(153, 41, 41);
+}
+
+.admin-user {
+  border: 2px solid rgb(41, 41, 128);
 }
