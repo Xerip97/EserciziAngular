@@ -1,8 +1,14 @@
-<app-user-single
-  *ngFor="let user of userList"
-  ngClass="user-list-container"
-  [user]="user"
-  [userIndex]="userList.indexOf(user) + 1"
-  (clickDeleteUser)="deleteUser($event)"
->
-</app-user-single>
+<div class="user-list container" *ngIf="userList.length !== 0; else noUsers">
+  <app-user-single
+    *ngFor="let user of userList"
+    ngClass="user-list-container"
+    [user]="user"
+    [userIndex]="userList.indexOf(user) + 1"
+    (clickDeleteUser)="deleteUser($event)"
+  >
+  </app-user-single>
+</div>
+
+<ng-template #noUsers>
+  <p>No users</p>
+</ng-template>
